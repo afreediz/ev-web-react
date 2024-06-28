@@ -1,7 +1,7 @@
 import './Hero.css'
-import arrow_btn from '../../assets/arrow_btn.png'
 import play_icon from '../../assets/play_icon.png'
 import pause_icon from '../../assets/pause_icon.png'
+import {FaArrowAltCircleRight} from 'react-icons/fa'
 
 const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) => {
   return (
@@ -12,7 +12,7 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
       </div>
       <div className="hero-explore">
         <p>Explore the features</p>
-        <img src={arrow_btn} alt="" />
+        <FaArrowAltCircleRight className=' text-6xl' />
       </div>
       <div className="hero-dot-play">
         <ul className="hero-dots">
