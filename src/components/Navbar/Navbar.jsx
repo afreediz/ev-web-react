@@ -14,20 +14,19 @@ const Navbar = () => {
         </li>
         <li 
           className="relative hover:text-blue-300 cursor-pointer"
-          onMouseEnter={() => setIsDropdownOpen(true)}
-          onMouseLeave={() => setIsDropdownOpen(false)}
+          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         >
           Products
           {isDropdownOpen && (
             <ul className="absolute left-0 mt-2 bg-gray-700 text-white p-2 rounded shadow-lg">
               <li className="hover:text-blue-300 cursor-pointer">
-                <Link to="/se03-lite">SE03 Lite</Link>
+                <Link to="products/se03-lite">SE03 Lite</Link>
               </li>
               <li className="hover:text-blue-300 cursor-pointer">
-                <Link to="/se03">SE03</Link>
+                <Link to="products/se03">SE03</Link>
               </li>
               <li className="hover:text-blue-300 cursor-pointer">
-                <Link to="/se03-max">SE03 Max</Link>
+                <Link to="products/se03-max">SE03 Max</Link>
               </li>
               <li className="hover:text-blue-300 cursor-pointer">
                 <Link to="/compare-all">Compare all</Link>

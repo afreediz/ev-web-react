@@ -10,6 +10,8 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
         <p>{heroData.text1}</p>
         <p>{heroData.text2}</p>
       </div>
+        <div className=' text-2xl text-slate-100 w-1/2'>“Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets Style."
+        (And the last word will keep changing: Elegance, Minimalism, Comfort)</div>
       <div className="hero-explore">
         <p>Explore the features</p>
         <FaArrowAltCircleRight className=' text-6xl' />
@@ -26,6 +28,7 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
         </div>
       </div>
     </div>
+    
   )
 }
 
